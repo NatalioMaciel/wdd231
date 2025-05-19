@@ -29,12 +29,7 @@
     main {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-    }
-
-    span {
-        grid-column: 1 / 3;
-        text-align: center;
+        gap: 20px;
     }
 
     footer {
@@ -79,16 +74,24 @@
 
     .information {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr;
         text-align: center;
-        border: 1px solid rgb(0 0 0 / 0.1);
-        gap: 5px;
     }
 
     .information div {
-        padding: 1rem;
         align-items: center;
-        width: 95%;
+        border: 1px solid #aaa;
+    }
+
+    .event {
+        height: 90%;
+    }
+
+    .weather,
+    .forecast {
+        border-radius: 20px;
+        width: 80%;
+        height: 90%;
     }
 
 }
