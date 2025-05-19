@@ -1,6 +1,6 @@
 function displayCopyright() {
     const currentYear = new Date().getFullYear();
-    document.getElementById('copyright').textContent = `© ${currentYear} ⚒️ Natalio Maciel ⚒️ Luque, Paraguay`;
+    document.getElementById('copyright').textContent = `© ${currentYear} ⚒️ Chamber Of Commerce of Paraguay ⚒️`;
 }
 
 function displayLastModified() {

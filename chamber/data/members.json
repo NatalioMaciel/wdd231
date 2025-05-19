@@ -1,0 +1,78 @@
+{
+    "membership_level": [
+        {
+            "1": "member"
+        },
+        {
+            "2": "silver"
+        },
+        {
+            "3": "gold"
+        }
+    ],
+    "business": [
+        {
+            "name": "Camils Store",
+            "addresses": "Mayo street 293",
+            "phone": "971-200-140",
+            "website": "camilsstore.com.py",
+            "image": "images/camils_store.webp",
+            "membership_level": "1",
+            "descripcion": "Groceries Store"
+        },
+        {
+            "name": "Music Hall",
+            "addresses": "Criollos de America street 111",
+            "phone": "975-310-158",
+            "website": "musichall.com.py",
+            "image": "images/music_store.webp",
+            "membership_level": "3",
+            "descripcion": "Music Store, The best Instruments"
+        },
+        {
+            "name": "Pet Shop",
+            "addresses": "Humaita AV 1005",
+            "phone": "994-251-223",
+            "website": "petshop.com.py",
+            "image": "images/pet_store.webp",
+            "membership_level": "2",
+            "descripcion": "Pet Store"
+        },
+        {
+            "name": "Good Arte",
+            "addresses": "Gral. Aquino street 3350",
+            "phone": "973-322-987",
+            "website": "goodartepy.com.py",
+            "image": "images/goodarte_logo2.webp",
+            "membership_level": "2",
+            "descripcion": "Handmade products"
+        },
+        {
+            "name": "Star Bar-Restorant",
+            "addresses": "Mariscal Lopes AV 2042",
+            "phone": "985-104-809",
+            "website": "starrestorant.com.py",
+            "image": "images/restorant.webp",
+            "membership_level": "3",
+            "descripcion": "Bar - Restorant"
+        },
+        {
+            "name": "Fibrex Nurseries",
+            "addresses": "Las Residentas AV 320",
+            "phone": "993-290-324",
+            "website": "fibrexnurseries.com.py",
+            "image": "images/nurseries.webp",
+            "membership_level": "1",
+            "descripcion": "Nurseries Store"
+        },
+        {
+            "name": "Sweet",
+            "addresses": "Santisimo Sacramento AV 1132",
+            "phone": "983-309-987",
+            "website": "sweetbakery.com.py",
+            "image": "images/ice_cream.webp",
+            "membership_level": "3",
+            "descripcion": "Bakery and Ice Cream"
+        }
+    ]
+}

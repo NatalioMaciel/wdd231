@@ -1,7 +1,94 @@
-:root {
-    --background-color: #931F1D;
-    --nav-background: #CCB7AE;
-    --link-color: #A6808C;
-    --text-color: #333;
-    --footer-background: #004E89;
+@media only screen and (min-width: 600px) {
+    :root {
+        --background-color: #931F1D;
+        --nav-background: #CCB7AE;
+        --link-color: #A6808C;
+        --text-color: #333;
+        --footer-background: #004E89;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul.navigation,
+    ul.navigation.open {
+        display: flex;
+        justify-content: end;
+    }
+
+    ul.navigation a:hover {
+        background-color: var(--link-color);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    span {
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem;
+        border-top: 1px solid #443850;
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+
+
+    /*------Classes--------*/
+
+    .banner {
+        display: contents;
+        background-position: center;
+        max-width: 1200px;
+        margin-top: 25px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+
+    .business {
+        display: grid;
+        background-color: var(--nav-background);
+        border-radius: 20px;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        border: 1px solid rgb(0 0 0 / 0.1);
+        gap: 5px;
+    }
+
+    .information div {
+        padding: 1rem;
+        align-items: center;
+        width: 95%;
+    }
+
 }

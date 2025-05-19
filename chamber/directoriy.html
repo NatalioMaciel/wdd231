@@ -20,15 +20,16 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/members.js"></script>
 </head>
 
 <body>
     <header>
-        <a href=""><img src="images/Chamber_logo.webp" alt="Chamber of Commerce of Paraguay"></a>
-        <h1>C-C-P</h1>
-        <a id="menu" href="#"></a>
+        <img src="images/Chamber_logo.webp" alt="Chamber of Commerce of Paraguay">
+        <h1>Paraguayan Chamber</h1>
+        <button id="menu"></button>
     </header>
-    <nav>
+    <nav id="animateme">
         <ul class="navigation">
             <li><a id="home" href="">Home</a></li>
             <li><a id="directory" href="">Directory</a></li>
@@ -36,14 +37,14 @@
             <li><a id="join" href="">Join</a></li>
         </ul>
     </nav>
+    <picture class="banner">
+        <source srcset="images/hero_image_large.webp" media="(min-width: 800px)">
+        <source srcset="images/hero_image_medium.webp" media="(min-width: 600px)">
+        <img src="images/hero_image_small.webp" width="400" alt="hero image">
+    </picture>
     <main>
-        <picture class="banner">
-            <source srcset="images/hero_image_large.webp" media="(min-width: 900px)">
-            <source srcset="images/hero_image_medium.webp" media="(min-width: 600px)">
-            <img src="images/hero_image_small.webp" width="400" alt="hero image">
-        </picture>
         <h1>Home</h1>
-        <section>
+        <section class="information">
             <div>
                 <h2>Event</h2>
             </div>
@@ -54,43 +55,25 @@
                 <h2>Weather Forecast</h2>
             </div>
         </section>
-        <div class="business_tag">
-            <h3>Busines Name</h3>
-            <p>Business Tag Line</p>
-            <img src="images/image_icon_small.png" alt="Busines">
-            <ul>
-                <li>EMAIL:</li>
-                <li>PHONE:</li>
-                <li>URL:</li>
-            </ul>
-        </div>
-        <div class="business_tag">
-            <h3>Busines Name</h3>
-            <p>Business Tag Line</p>
-            <img src="images/image_icon_small.png" alt="Busines">
-            <ul>
-                <li>EMAIL:</li>
-                <li>PHONE:</li>
-                <li>URL:</li>
-            </ul>
-        </div>
-        <div class="business_tag">
-            <h3>Busines Name</h3>
-            <p>Business Tag Line</p>
-            <img src="images/image_icon_small.png" alt="Busines">
-            <ul>
-                <li>EMAIL:</li>
-                <li>PHONE:</li>
-                <li>URL:</li>
-            </ul>
-        </div>
-        <section>
 
+        <section class="business">
+            <div class="menu">
+                <button id="grid">⏹️ Grid</button>
+                <button id="list">📄 List</button>
+            </div>
+            <article id="members_business" class="grid">
+            </article>
         </section>
     </main>
     <footer>
-
         <div>
+            <strong>Paraguay Chamber of Commerce</strong><br>
+            Estrella Street 550<br>
+            Asuncion, 2060<br>
+            <a href="mailto:info@chamberofparaguay.org">info@chamberofparaguay.org</a><br>
+            (223) 555-2300
+        </div>
+        <div class="social_media">
             <a href="https://youtube.com" target="_blank">
                 <img class="footer__img" src="images/youtube_icon.png" alt="Youtube" width="50">
             </a>
@@ -101,8 +84,12 @@
                 <img class="footer__img" src="images/linkedin_icon.png" alt="LinkedIn" width="50">
             </a>
         </div>
-        <p id="copyright"></p>
-        <p id="last-modified"></p>
+        <div>
+            WDD231 Class Project
+            <p id="copyright"></p>
+            <p id="last-modified"></p>
+        </div>
+
     </footer>
 </body>
 
