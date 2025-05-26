@@ -60,32 +60,9 @@ fetch(forecastUrl)
     });
 
 //Business JSON
+// Hihglight Business
 
-/*fetch('data/members.json')
-    .then(response => response.json())
-    .then(data => {
-        const container = document.getElementById("members_business");
-
-        data.business.forEach(member => {
-            const section = document.createElement("section");
-            section.classList.add("member");
-
-            section.innerHTML = `
-                <h3>${member.name}</h3>
-                <img src="${member.image}" alt="${member.name}">
-                <p>${member.addresses}</p>
-                <p>${member.phone}</p>
-                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-            `;
-
-            display.appendChild(section);
-        });
-    })
-    .catch(error => {
-        console.error("Error loading the JSON:", error);
-    });*/
-
-const container = document.querySelector("#members_business");
+const container = document.querySelector("#highlight_business");
 const url = "data/members.json";
 
 function randomArray(array) {
@@ -118,7 +95,7 @@ async function showBusiness() {
                 <p>${business.addresses}</p>
                 <p>${business.phone}</p>
                 <p><a href="${business.website}" target="_blank">${business.website}</a></p>
-                <p><strong>Membresía:</strong> ${business.membership_level === "2" ? "Silver" : "Gold"}</p>
+                <p><strong>Membership:</strong> ${business.membership_level === "2" ? "Silver" : "Gold"}</p>
             `;
             container.appendChild(section);
         });
@@ -128,3 +105,30 @@ async function showBusiness() {
 }
 
 showBusiness();
+
+//Total of business -- Directory page
+
+fetch('data/members.json')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById("members_business");
+
+        data.business.forEach(member => {
+            const section = document.createElement("section");
+            section.classList.add("member");
+
+            section.innerHTML = `
+                <h3>${member.name}</h3>
+                <img src="${member.image}" alt="${member.name}">
+                <p>${member.addresses}</p>
+                <p>${member.phone}</p>
+                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+                
+            `;
+
+            display.appendChild(section);
+        });
+    })
+    .catch(error => {
+        console.error("Error loading the JSON:", error);
+    });

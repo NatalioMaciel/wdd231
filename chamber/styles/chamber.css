@@ -115,7 +115,25 @@ footer div a {
 
 /*--------Classes---------*/
 
+.cta-button {
+    display: inline-block;
+    background-color: var(--footer-background);
+    color: var(--text-color2);
+    margin: 5px auto;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.cta-button:hover {
+    background-color: #0056b3;
+}
 
 
 .banner {
