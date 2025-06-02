@@ -92,7 +92,7 @@ h2 {
 
 h3 {
     font-size: .9rem;
-    color: #E07A5F;
+    color: var(--text-color);
     margin: 1.5rem 0 .2rem 0;
     border-bottom: 1px solid #eee;
 }
@@ -121,10 +121,13 @@ article div {
     background-color: var(--nav-background);
     border: 1px solid var(--text-color);
     width: 75%;
+
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 article div button {
-    display: grid;
     text-align: center;
     background-color: var(--footer-background);
     color: white;
@@ -144,6 +147,17 @@ dialog {
     box-shadow: 0 0 3rem #777;
     width: 90%;
     max-width: 600px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 ::backdrop {
@@ -364,7 +378,6 @@ form {
 
     input[type=text],
     input[type=tel],
-    input[type=date],
     input[type=email],
     select {
         display: block;
@@ -400,11 +413,9 @@ form {
     }
 
     input[type=submit] {
-        display: grid;
-        border: none;
         text-align: center;
         background-color: var(--nav-background);
-        color: white;
+        color: var(--text-color);
         box-shadow: 1px 1px 4px #999;
         border-radius: 1rem;
         padding: .75rem 1.5rem;

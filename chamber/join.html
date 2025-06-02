@@ -46,8 +46,8 @@
                         title="Your First Name"></label>
                 <label>Last Name<input type="text" name="last" required autocomplete="family-name"
                         title="Your Last Name"></label>
-                <label>Title<input type="text" name="title" autocomplete="organization-title"
-                        title="Organizational Title" placeholder=""></label>
+                <label>Title<input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                        title="Organizational Title"></label>
                 <label>Email<input type="email" name="email" required placeholder="example@gmail.com" title="Your Email"
                         autocomplete="email"></label>
                 <label>Phone Number<input type="tel" name="phone" required placeholder="09XX-XXX-XXX" title="Your Phone"
@@ -64,8 +64,7 @@
 
                 <label>Description of your business</label>
                 <textarea title="business description" name="description"></textarea>
-                <timestamp type="hidden" id="timestamp"></timestamp>
-
+                <input type="hidden" name="date" id="timestamp">
                 <input type="submit" value="Apply for membership">
             </form>
 
@@ -73,19 +72,19 @@
                 <h3>Membership Levels</h3>
                 <div>
                     <h4>NP Non Profits Membership</h4>
-                    <button id="modal">Learn More</button>
+                    <button>Learn More</button>
                 </div>
                 <div>
                     <h4>Bronze Membership</h4>
-                    <button id="modal">Learn More</button>
+                    <button>Learn More</button>
                 </div>
                 <div>
                     <h4>Silver Membership</h4>
-                    <button id="modal">Learn More</button>
+                    <button>Learn More</button>
                 </div>
                 <div>
                     <h4>Gold Membership</h4>
-                    <button id="modal">Learn More</button>
+                    <button>Learn More</button>
                 </div>
             </article>
 

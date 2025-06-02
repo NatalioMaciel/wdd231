@@ -1,5 +1,6 @@
 export function loadMembershipModal() {
     const dialog = document.getElementById("mydialog");
+    if (!dialog) return
 
     dialog.innerHTML = `
         <div>
@@ -18,7 +19,7 @@ export function loadMembershipModal() {
         .then(response => response.json())
         .then(data => {
             const levels = data.membership_level;
-            const buttons = document.querySelectorAll("button#modal");
+            const buttons = document.querySelectorAll("button");
 
             buttons.forEach((btn, index) => {
                 btn.addEventListener("click", () => {
