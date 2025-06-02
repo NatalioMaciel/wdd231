@@ -20,9 +20,7 @@
     <link rel="icon" href="favicon_chamber.ico">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/date.js"></script>
-    <script defer src="scripts/members.js"></script>
+    <script type="module" src="scripts/modules.mjs"></script>
 </head>
 
 <body>
@@ -36,11 +34,64 @@
             <li><a id="home" href="index.html">Home</a></li>
             <li><a id="directory" href="directory.html">Directory</a></li>
             <li><a id="business_directory" href="">Business Directory</a></li>
-            <li><a id="join" href="">Join</a></li>
+            <li><a id="join" href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
-        
+        <h1>Join Us</h1>
+
+        <section class="join_main">
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name<input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name<input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Title<input type="text" name="title" autocomplete="organization-title"
+                        title="Organizational Title" placeholder=""></label>
+                <label>Email<input type="email" name="email" required placeholder="example@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Phone Number<input type="tel" name="phone" required placeholder="09XX-XXX-XXX" title="Your Phone"
+                        autocomplete="tel"></label>
+                <label>Organization<input type="text" name="title" autocomplete="organization-title"
+                        title="Organization"></label>
+
+
+                <h3>Membership Level</h3>
+                <label><input type="radio" name="membership" value="NP" checked> NP members</label>
+                <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+
+                <label>Description of your business</label>
+                <textarea title="business description" name="description"></textarea>
+                <timestamp type="hidden" id="timestamp"></timestamp>
+
+                <input type="submit" value="Apply for membership">
+            </form>
+
+            <article>
+                <h3>Membership Levels</h3>
+                <div>
+                    <h4>NP Non Profits Membership</h4>
+                    <button id="modal">Learn More</button>
+                </div>
+                <div>
+                    <h4>Bronze Membership</h4>
+                    <button id="modal">Learn More</button>
+                </div>
+                <div>
+                    <h4>Silver Membership</h4>
+                    <button id="modal">Learn More</button>
+                </div>
+                <div>
+                    <h4>Gold Membership</h4>
+                    <button id="modal">Learn More</button>
+                </div>
+            </article>
+
+            <dialog id="mydialog"></dialog>
+        </section>
+
     </main>
     <footer>
         <div>

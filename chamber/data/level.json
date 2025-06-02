@@ -1,0 +1,24 @@
+{
+    "membership_level" : [
+        {
+            "level": "NP Member",
+            "cost": "free",
+            "benefits": "Event discounts, basic directory listing"
+        },
+        {
+            "level": "Bronze",
+            "cost": "500$ per year",
+            "benefits": "Training access, networking events, small ad space"
+        },
+        {
+            "level": "Silver",
+            "cost": "5.000$ per year",
+            "benefits": "Featured directory listing, some spotlight ads, discounts"
+        },
+        {
+            "level": "Gold",
+            "cost": "10.000$ per year",
+            "benefits": "Homepage spotlight, VIP event access, max ad exposure"
+        }
+    ]
+}

@@ -1,15 +1,4 @@
 {
-    "membership_level": [
-        {
-            "1": "member"
-        },
-        {
-            "2": "silver"
-        },
-        {
-            "3": "gold"
-        }
-    ],
     "business": [
         {
             "name": "Camils Store",
