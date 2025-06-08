@@ -2,6 +2,8 @@ export async function loadDiscovery() {
     const showPlaces = document.querySelector("#discovery");
     const url = "data/paraguay.json";
 
+    if (!showPlaces) return
+
     try {
         const response = await fetch(url);
         const data = await response.json();

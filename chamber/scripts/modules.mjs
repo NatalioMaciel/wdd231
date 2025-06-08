@@ -8,6 +8,7 @@ import { loadDirectory } from './directory.mjs';
 import { loadDiscovery } from './discovery.mjs';
 import { loadForm } from './form.mjs'
 import { loadMembershipModal } from './membershipModal.mjs';
+import { visitDate } from './visitDate.mjs';
 
 document.addEventListener("DOMContentLoaded", () => {
     showGridList();
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadDirectory();
     loadDiscovery()
     loadForm();
+    visitDate();
     loadMembershipModal();
     displayCopyright();
     displayLastModified();
