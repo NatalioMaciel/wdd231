@@ -16,6 +16,7 @@ export async function loadDiscovery() {
             const image = document.createElement("img");
             image.src = place.image;
             image.alt = place.name;
+            image.loading = "lazy";
             card.appendChild(image);
 
             const title = document.createElement("h2");
@@ -29,6 +30,10 @@ export async function loadDiscovery() {
             const description = document.createElement("p");
             description.textContent = place.description;
             card.appendChild(description);
+
+            const button = document.createElement("button");
+            button.textContent = "Learn More";
+            card.appendChild(button);
 
             showPlaces.appendChild(card);
         });

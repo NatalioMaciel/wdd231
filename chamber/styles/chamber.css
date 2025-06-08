@@ -368,7 +368,8 @@ img {
     grid-template-areas: "name"
         "image"
         "description"
-        "location";
+        "location"
+        "button";
 }
 
 .discovery_places section h2 {
@@ -396,6 +397,17 @@ img {
 .discovery_places section address {
     margin: 1rem 10px;
     grid-area: location;
+}
+
+.discovery_places section button {
+    grid-area: button;
+    color: var(--text-color2);
+    background-color: var(--footer-background);
+    border-radius: 5px;
+    margin: 2px auto;
+    font-size: 1rem;
+    height: 30px;
+    cursor: pointer;
 }
 
 /*-----Date visit-----*/

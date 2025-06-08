@@ -8,6 +8,16 @@
     }
 
     /*------Classes--------*/
+    .discovery_places section {
+        grid-template-areas: "image name"
+            "image description"
+            "image location"
+            "button";
+    }
+
+    .discovery_places section button {
+        grid-area: button;
+    }
 
     .banner {
         display: contents;

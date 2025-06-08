@@ -43,7 +43,8 @@
     .discovery_places section {
         grid-template-areas: "image name"
             "image description"
-            "image location";
+            "image location"
+            "image button";
     }
 
     .discovery_places section img {
