@@ -23,7 +23,7 @@ export async function showBusiness() {
         const highlightBusiness = randomArray(highlight).slice(0, 3);
 
         highlightBusiness.forEach(business => {
-            const section = document.createElement("section");
+            const section = document.createElement("div");
             section.classList.add("business");
 
             section.innerHTML = `

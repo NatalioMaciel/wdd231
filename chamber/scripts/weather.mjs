@@ -17,11 +17,11 @@ export function loadWeather() {
             weather.innerHTML = `
               <p><strong>${Math.round(data.main.temp)}°F</strong></p>
               <p>${data.weather[0].description}</p>
-              <p>High: ${Math.round(data.main.temp_max)}°</p>
-              <p>Low: ${Math.round(data.main.temp_min)}°</p>
-              <p>Humidity: ${data.main.humidity}%</p>
-              <p>Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</p>
-              <p>Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</p>
+              <p>High:<strong> ${Math.round(data.main.temp_max)}°</strong></p>
+              <p>Low: <strong>${Math.round(data.main.temp_min)}°</strong></p>
+              <p>Humidity: <strong>${data.main.humidity}%</strong></p>
+              <p>Sunrise: <strong>${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</strong></p>
+              <p>Sunset: <strong>${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</strong></p>
             `;
         });
 

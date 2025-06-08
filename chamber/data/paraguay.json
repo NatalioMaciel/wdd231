@@ -1,0 +1,52 @@
+{
+    "discovery": [
+        {
+            "name": "Palacio de los López",
+            "description": "The Presidential Palace of Paraguay, known as Palacio de los López, is a neoclassical building that serves as the official workplace of the President. It’s a symbol of government and Paraguayan heritage.",
+            "address": "El Paraguayo Independiente y Ayolas, Asunción, Paraguay",
+            "image": "images/palacio-de-los-lopez.webp"
+        },
+        {
+            "name": "Panteón Nacional de los Héroes",
+            "description": "The National Pantheon of the Heroes is a mausoleum honoring Paraguay's greatest national heroes. It’s an iconic historical site and a symbol of national pride.",
+            "address": "Calle Palma y Chile, Asunción, Paraguay",
+            "image": "images/panteon-heroes.webp"
+        },
+        {
+            "name": "Represa de Itaipú",
+            "description": "One of the largest hydroelectric dams in the world, shared between Paraguay and Brazil. It's a feat of engineering and a major source of electricity.",
+            "address": "Avenida Monseñor Rodríguez, Hernandarias, Alto Paraná, Paraguay",
+            "image": "images/represa-itaipu.webp"
+        },
+        {
+            "name": "Ruinas Jesuíticas de Trinidad y Jesús",
+            "description": "These are UNESCO World Heritage sites that preserve the remains of Jesuit missions from the 17th and 18th centuries, such as Trinidad and Jesús de Tavarangue.",
+            "address": "Jesús de Tavarangue, a few km from Trinidad, Itapúa, Paraguay",
+            "image": "images/ruinas-jesuitas.webp"
+        },
+        {
+            "name": "Costanera de Encarnación",
+            "description": "A beautiful waterfront promenade along the Paraná River, popular for walking, cycling, and enjoying the beach and sunset.",
+            "address": "Avenida Costanera, Encarnación, Itapúa, Paraguay",
+            "image": "images/costanera-encarnción.webp"
+        },
+        {
+            "name": "Salto del Monday",
+            "description": "A stunning natural waterfall, over 40 meters high, surrounded by lush forest and part of a protected park.",
+            "address": "Área 1, Presidente Franco, Alto Paraná, Paraguay",
+            "image": "images/saltos-del-monday.webp"
+        },
+        {
+            "name": "Iglesia de Yaguarón",
+            "description": "A colonial-era church with impressive baroque-style altars and artwork, built in the 18th century by Franciscan missionaries.",
+            "address": "Ruta 1 Mariscal Francisco Solano López, Yaguarón, Paraguarí, Paraguay",
+            "image": "images/iglesia-de-jaguaron.webp"
+        },
+        {
+            "name": "Museo del Fútbol Sudamericano",
+            "description": "A modern museum dedicated to the history and legacy of South American football, showcasing trophies, memorabilia, and interactive exhibits.",
+            "address": "Avenida Sudamericana, Luque, Central Department, Paraguay",
+            "image": "images/museo-del-futbol-sudamericano.webp"
+        }
+    ]
+}
