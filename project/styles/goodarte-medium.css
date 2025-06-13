@@ -1,0 +1,57 @@
+@media only screen and (min-width: 600px) {
+
+    :root {
+        --primary-color: #CB857C;
+        /* Rosewood Dust / Muted Terracotta */
+        --secondary-color: #7C8B6F;
+        /* Sage Green / Olive Gray */
+        --accent-color: #D4AF37;
+        /* Metallic Gold */
+        --background-color: #FDF8F6;
+        /* Linen / Blush White */
+        --text-color: #2F2F2F;
+        /* Charcoal Gray */
+        --header-background: #7C8B6F;
+        /* Pure White */
+        --footer-background: #7C8B6F;
+        /* (Same as Secondary) Sage Green */
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul.navigation,
+    ul.navigation.open {
+        display: flex;
+        justify-content: end;
+    }
+
+    ul.navigation a:hover {
+        background-color: var(--link-color);
+    }
+
+    nav {
+        background-color: var(--background-color);
+        grid-template-rows: 1fr;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .banner {
+        max-width: 1023px;
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "productName": "Amigurris Cr7",
+            "category": "Stuffed Animals",
+            "image": "images/cr7.webp",
+            "sale" : "1"
+        },
+        {
+            "productName": "Amigurris Spider",
+            "category": "Key Chain",
+            "image": "images/key_chain_spider.webp",
+            "sale" : "1"
+        },
+        {
+            "productName": "Amigurris Bear",
+            "category": "Key Chain",
+            "image": "images/key_chain_bear.webp",
+            "sale" : "0"
+        },
+        {
+            "productName": "Amigurris Bee",
+            "category": "Key Chain",
+            "image": "images/key_chain_bee.webp",
+            "sale" : "1"
+        },
+        {
+            "productName": "Amigurris Tomato",
+            "category": "Stuffed Animals",
+            "image": "images/small_stuffed.webp",
+            "sale" : "0"
+        },
+        {
+            "productName": "Amigurris chick",
+            "category": "Key Chain",
+            "image": "images/key_chain_chick.webp",
+            "sale" : "1"
+        },
+        {
+            "productName": "Amigurris Unicorn",
+            "category": "Stuffed Animals",
+            "image": "images/unicorn.webp",
+            "sale" : "0"
+        },
+        {
+            "productName": "Handmade knife",
+            "category": "Grill Kit",
+            "image": "images/handmade_knife.webp",
+            "sale" : "1"
+        },
+        {
+            "productName": "Board Game",
+            "category": "Board Game",
+            "image": "images/board_games.webp",
+            "sale" : "0"
+        },
+        {
+            "productName": "Amigurris Cat",
+            "category": "Stuffed Animals",
+            "image": "images/small_stuffed_2.webp",
+            "sale" : "0"
+        },
+        {
+            "productName": "Plush Bouquet Flower",
+            "category": "Plush Bouquet",
+            "image": "images/stuffed_flowers2.webp",
+            "sale" : "1"
+        },
+        {
+            "productName": "Plush Bouquet Dinasor",
+            "category": "Plush Bouquet",
+            "image": "images/stuffed_flowers.webp",
+            "sale" : "0"
+        }
+    ]
+}

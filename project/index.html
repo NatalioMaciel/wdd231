@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Good Arte Handmade products</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Natalio Maciel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Home Page - Good Arte Handmade products">
+    <meta property="og:description" content="The best handmade products, every think you can imagin we can make it">
+    <meta property="og:image" content="https://nataliomaciel.github.io/wdd231/project/images/good-arte-logo.webp">
+    <meta property="og:url" content="https://nataliomaciel.github.io/wdd231/project/index.html">
+    <link rel="icon" href="images/good-favicon.ico">
+    <link rel="stylesheet" href="styles/goodarte.css">
+    <link rel="stylesheet" href="styles/goodarte-medium.css">
+    <script type="module" src="scripts/modules.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/good-logo-header.webp" alt="Good Arte - Handmade Products">
+        <h1>Good Arte</h1>
+        <button id="menu"></button>
+    </header>
+    <nav id="animateme">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <picture class="banner">
+        <source srcset="images/banner.webp" media="(min-width: 1024px)">
+        <source srcset="images/medium-banner.webp" media="(min-width: 600px)">
+        <img src="images/banner3.webp" width="400" alt="hero image">
+    </picture>
+    <button class="cta-button" onclick="window.location.href='join.html'">Contact Us</button>
+    <main>
+        <h1>Best Seller - Products</h1>
+        <section>
+            <div id="best_products" class="grid">
+            </div>
+        </section>
+        <section>
+            <div class="newsletter">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Get the latest updates, offers, and product news straight to your inbox.</p>
+                <form id="newsletter-form">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <strong>Good Arte - Handmade Products</strong><br>
+            Silvio Parodi Street 550<br>
+            Luque, 2060<br>
+            goodarteparaguay@gmail.com<br>
+            (+595)984-111-111
+        </div>
+        <div class="social_media">
+            <a href="https://youtube.com" target="_blank">
+                <img class="footer__img" src="images/youtube_icon.png" alt="Youtube" width="50">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img class="footer__img" src="images/twitter_icon.png" alt="twitter" width="50">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img class="footer__img" src="images/linkedin_icon.png" alt="LinkedIn" width="50">
+            </a>
+        </div>
+        <div>
+            <p id="copyright"></p>
+            <p id="last-modified"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
