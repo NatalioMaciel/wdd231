@@ -32,30 +32,24 @@
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
     </nav>
-    <picture class="banner">
-        <source srcset="images/banner.webp" media="(min-width: 1024px)">
-        <source srcset="images/medium-banner.webp" media="(min-width: 600px)">
-        <img src="images/banner3.webp" width="400" alt="hero image">
-    </picture>
-    <button class="cta-button" onclick="window.location.href='about.html'">Contact Us</button>
+
     <main>
-        <h1>Best Seller - Products</h1>
+        <form class="search">
+            <input type="text" id="search" name="searchProduct" placeholder="🔍Search Products">
+        </form>
+
+        <h1>Categories</h1>
         <section>
-            <div id="best_products" class="grid">
+            <div id="category_products" class="category">
             </div>
+            <dialog id="mydialog"></dialog>
         </section>
-        <section>
-            <div class="newsletter">
-                <h2>Subscribe to our Newsletter</h2>
-                <p>Get the latest updates, offers, and product news straight to your inbox.</p>
-                <form id="newsletter-form">
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
+        
+        <h2>Products</h2>
+        <section id="products" class="grid">
         </section>
     </main>
     <footer>

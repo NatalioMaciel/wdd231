@@ -1,0 +1,29 @@
+{
+    "categories": [
+        {
+            "name": "Stuffed",
+            "description": "Soft and cuddly handmade stuffed animals perfect for children and collectors alike. Each piece is crafted with care and attention to detail.",
+            "image": "images/stuffed-animal.webp"
+        },
+        {
+            "name": "Key Chain",
+            "description": "Unique and decorative key chains made with various materials and themes, ideal for personal use or as charming gifts.",
+            "image": "images/key-chain.webp"
+        },
+        {
+            "name": "Grill Kit",
+            "description": "Complete grilling accessory kits, perfect for outdoor BBQs and family gatherings. Includes essentials for a great grilling experience.",
+            "image": "images/grill-kit.webp"
+        },
+        {
+            "name": "Board Game",
+            "description": "Creative and entertaining handmade board games for all ages. Perfect for family game nights and friendly competitions.",
+            "image": "images/board-game.webp"
+        },
+        {
+            "name": "Plush Bouquet",
+            "description": "Adorable bouquets made of small plush toys, combining the charm of flowers with the warmth of cuddly companions. Ideal for special occasions.",
+            "image": "images/plush.webp"
+        }
+    ]
+}
