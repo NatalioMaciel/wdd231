@@ -36,44 +36,33 @@
             <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
-    <section class="hero-wrapper">
-        <div>
-            <picture class="banner">
-                <source srcset="images/banner.webp" media="(min-width: 1024px)">
-                <source srcset="images/banner1.webp" media="(min-width: 600px)">
-                <img src="images/banner3.webp" width="400" alt="hero image">
-            </picture>
-            <button class="cta-button-small" onclick="window.location.href='about.html'">Shop Now</button>
-        </div>
-        <div class="hero-overlay">
-            <h1>Welcome to Good Arte</h1>
-            <p>Handmade creations</p>
-            <p>made with love!</p>
-            <a href="products.html" class="cta-button">Shop Now</a>
-        </div>
-    </section>
 
     <main>
-        <h1>Best Seller - Products</h1>
         <section>
-            <div id="best_products" class="grid">
-            </div>
-            <br>
-            <h2>Categories</h2>
-            <div id="category_products" class="category">
-            </div>
-            <dialog id="mydialog"></dialog>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7216.034169935159!2d-57.48457784655763!3d-25.270010704189534!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spy!4v1730438163637!5m2!1ses-419!2spy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section>
-            <div class="newsletter">
-                <h2>Subscribe to our Newsletter</h2>
-                <p>Get the latest updates, offers, and product news straight to your inbox.</p>
-                <form id="newsletter-form">
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
+            <h3>Contact Us</h3>
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name<input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name<input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Email<input type="email" name="email" required placeholder="example@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Phone Number<input type="tel" name="phone" required placeholder="09XX-XXX-XXX" title="Your Phone"
+                        autocomplete="tel"></label>
+
+                <label>Description of your business</label>
+                <textarea title="business description" name="description"></textarea>
+                <input type="hidden" name="date" id="timestamp">
+                <input type="submit" value="Apply for membership">
+            </form>
         </section>
+
     </main>
     <footer>
         <div>
@@ -85,14 +74,11 @@
         </div>
         <div class="social_media">
             <a href="https://youtube.com" target="_blank">
-                <img class="footer__img" src="images/youtube_icon.png" alt="Youtube" width="50">
-            </a>
+                <img class="footer__img" src="images/youtube_icon.png" alt="Youtube" width="50"></a>
             <a href="https://twitter.com" target="_blank">
-                <img class="footer__img" src="images/twitter_icon.png" alt="twitter" width="50">
-            </a>
+                <img class="footer__img" src="images/twitter_icon.png" alt="twitter" width="50"></a>
             <a href="https://linkedin.com" target="_blank">
-                <img class="footer__img" src="images/linkedin_icon.png" alt="LinkedIn" width="50">
-            </a>
+                <img class="footer__img" src="images/linkedin_icon.png" alt="LinkedIn" width="50"></a>
         </div>
         <div>
             <p id="copyright"></p>

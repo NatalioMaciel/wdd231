@@ -51,7 +51,8 @@ export function loadCategory() {
 
                 div.innerHTML = `
                     <h3>${category.name}</h3>
-                    <img src="${category.image}" alt="${category.name}">
+                    <button id="button-modal"><img src="${category.image}" alt="${category.name}"></button>
+                    
                 `;
 
                 display.appendChild(div);
@@ -99,7 +100,7 @@ export async function loadProducts(filteredList = null) {
             card.appendChild(category);
 
             const button = document.createElement("button");
-            button.textContent = "Learn More";
+            button.textContent = "Add to Cart";
             card.appendChild(button);
 
             showProducts.appendChild(card);
@@ -114,6 +115,8 @@ export function filterProducts() {
 
     const searchInput = document.querySelector('#search');
 
+    if (!searchInput) return
+
     searchInput.addEventListener('input', function () {
         const filter = searchInput.value.toLowerCase();
         const filteredProducts = allProducts.filter(product =>
@@ -123,3 +126,38 @@ export function filterProducts() {
     });
 }
 
+export function loadProductModal() {
+    const dialog = document.getElementById("mydialog");
+    if (!dialog) return
+
+    dialog.innerHTML = `
+        <div>
+            <h2 id="modal-name"></h2>
+            <button id="close-modal">X</button>
+            <p id="modal-description"></p>
+        </div>
+    `;
+
+    dialog.querySelector("#close-modal").addEventListener("click", () => {
+        dialog.close();
+    });
+
+    fetch("data/categories.json")
+        .then(response => response.json())
+        .then(data => {
+            const category = data.categories;
+            const buttons = document.querySelectorAll("#button-modal");
+
+            buttons.forEach((btn, index) => {
+                btn.addEventListener("click", () => {
+                    const categories = category[index];
+
+                    dialog.querySelector("#modal-name").textContent = categories.name;
+                    dialog.querySelector("#modal-description").textContent = `${categories.description}`;
+
+                    dialog.showModal();
+                });
+            });
+        })
+        .catch(error => console.error("Error loading the categories data:", error));
+}

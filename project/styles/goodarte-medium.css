@@ -43,6 +43,39 @@
         gap: 20px;
     }
 
+    .cta-button-small {
+        display: none;
+    }
+
+    .hero-overlay {
+        display: inline;
+        position: absolute;
+        top: 45%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--background-color);
+        padding: 20px;
+        z-index: 0;
+    }
+
+    .cta-button {
+        display: inline-block;
+        color: var(--secondary-color);
+        background-color: var(--background-color);
+        padding: 12px 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 5px auto;
+        max-width: 200px;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -53,5 +86,17 @@
 
     .banner {
         max-width: 1023px;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product div {
+        grid-template-areas: "name"
+            "image"
+            "description"
+            "button";
     }
 }
