@@ -28,7 +28,7 @@ export async function showProducts() {
 
             div.innerHTML = `
                 <h3>${products.productName}</h3>
-                <img src="${products.image}" alt="${products.productName}">
+                <img src="${products.image}" alt="${products.productName} width="200px" height="200px">
                 <p>${products.category}</p>
             `;
             container.appendChild(div);
