@@ -132,7 +132,7 @@ footer div {
 }
 
 footer div a {
-    color: var(--background-color);
+    color: var(--text-color);
 }
 
 footer div p {

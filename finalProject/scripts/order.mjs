@@ -1,4 +1,6 @@
 export function loadFormData() {
+  const thankyou = document.querySelector('#results')
+  if (!thankyou) return
 
   const storedData = localStorage.getItem('formData');
   if (storedData) {
@@ -12,7 +14,5 @@ export function loadFormData() {
             <p><strong>Message:</strong> ${data.message}</p>
             <p><strong>Date:</strong> ${data.date}</p>
         `;
-  } else {
-    return
   }
 }
