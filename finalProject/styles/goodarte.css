@@ -482,68 +482,66 @@ iframe {
 
 /*------form---------*/
 form {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     margin: 15px;
     display: flex;
     flex-direction: column;
+}
 
-    label {
-        display: block;
-        font-size: .9rem;
-        color: var(--primary-color);
-        padding-top: .2rem;
-    }
+form label {
+    display: block;
+    font-size: 0.9rem;
+    color: #E07A5F;
+    padding-top: 0.2rem;
+}
 
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"] {
+    display: block;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 75%;
+}
 
-    input[type=text],
-    input[type=tel],
-    input[type=email] {
-        display: block;
-        margin: .1rem 0 1rem 0;
-        padding: .3rem;
-        border: 1px solid #999;
-        border-radius: 4px;
-        border-left-width: 5px;
-        border-left-color: #555;
-        font-size: 1rem;
-        color: #3D405B;
-        width: 75%;
-    }
+form textarea {
+    width: 75%;
+    height: 100px;
+    margin: 0.3rem 0;
+    border-radius: 10px;
+}
 
-    textarea {
-        width: 75%;
-        height: 100px;
-        margin: .3rem 0;
-        border-radius: 10px;
-    }
+form input:required {
+    border-left-color: #d70000;
+}
 
-    input:required {
-        border-left-color: #d70000;
-    }
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
 
-    input:focus {
-        border-left-color: black;
-        outline: none;
-    }
+form input:required:valid {
+    border-left-color: green;
+}
 
-    input:required:valid {
-        border-left-color: green;
-    }
-
-    input[type=submit] {
-        text-align: center;
-        background-color: var(--secondary-color);
-        color: #fff;
-        box-shadow: 1px 1px 4px #999;
-        border-radius: 1rem;
-        padding: .75rem 1.5rem;
-        margin: 2rem auto;
-        font-size: 1rem;
-        -webkit-appearance: none;
-        appearance: none;
-        cursor: pointer;
-    }
+form input[type="submit"] {
+    text-align: center;
+    background-color: #7C8B6F;
+    color: #fff;
+    box-shadow: 1px 1px 4px #999;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 2rem auto;
+    font-size: 1rem;
+    appearance: none;
+    cursor: pointer;
 }
 
 input:-webkit-autofill {
