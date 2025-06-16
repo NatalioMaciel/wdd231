@@ -1,20 +1,18 @@
-export function loadOrder() {
-    const timestampInput = document.getElementById("timestamp");
-    if (!timestampInput) return
+export function loadFormData() {
 
-    const now = new Date();
-    const isoDate = now.toISOString();
-    timestampInput.value = isoDate;
-
-    const myInfo = new URLSearchParams(window.location.search);
-    const rawDate = myInfo.get('date');
-    const formattedDate = rawDate ? new Date(rawDate).toLocaleString() : "";
+  const storedData = localStorage.getItem('formData');
+  if (storedData) {
+    const data = JSON.parse(storedData);
+    console.log(data);
 
     document.querySelector('#results').innerHTML = `
-    <p>Hello <strong>${myInfo.get('name')}</strong></p>
-    <p>We will contact you using the information provided:</p>
-    <p><strong>Email:</strong> ${myInfo.get('email')}</p>
-    <p><strong>Phone: </strong>${myInfo.get('phone')}</p>
-    <p><strong>Date:</strong> ${formattedDate}</p>
-  `;
+            <p><strong>Name:</strong> ${data.name}</p>
+            <p><strong>Email:</strong> ${data.email}</p>
+            <p><strong>Phone:</strong> ${data.phone}</p>
+            <p><strong>Message:</strong> ${data.message}</p>
+            <p><strong>Date:</strong> ${data.date}</p>
+        `;
+  } else {
+    return
+  }
 }

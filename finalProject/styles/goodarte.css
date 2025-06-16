@@ -153,6 +153,10 @@ footer div p {
 
 /*------Classes------*/
 
+.social_media {
+    margin: 0 auto;
+}
+
 .cta-button-small {
     position: absolute;
     top: 45%;

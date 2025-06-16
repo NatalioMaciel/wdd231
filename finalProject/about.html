@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <img src="images/good-logo-header.png" alt="Good Arte - Handmade Products">
+        <img src="images/good-logo-header.webp" alt="Good Arte - Handmade Products">
         <h1>Good Arte</h1>
         <button id="menu"></button>
     </header>
@@ -51,16 +51,16 @@
         <h2>Contact US</h2>
         <section class="information">
             <p class="order">Place your personalized order</p>
-            <form method="GET" action="thankyou.html" class="designOne" id="order-form">
+            <form method="GET" action="thankyou.html" class="designOne" id="contact-form">
                 <label>What's your name<input type="text" name="name" required autocomplete="given-name"
-                        title="Your Name"></label>
+                        title="Your Name" id="name"></label>
                 <label>Email<input type="email" name="email" required placeholder="example@gmail.com" title="Your Email"
-                        autocomplete="email"></label>
+                        autocomplete="email" id="email"></label>
                 <label>Phone Number<input type="tel" name="phone" required placeholder="09XX-XXX-XXX" title="Your Phone"
-                        autocomplete="tel"></label>
+                        autocomplete="tel" id="phone"></label>
 
                 <label>Describe your order</label>
-                <textarea title="order description" name="description"></textarea>
+                <textarea title="order description" name="description" id="message"></textarea>
                 <input type="hidden" name="date" id="timestamp">
                 <input type="submit" value="Make your Order">
             </form>
