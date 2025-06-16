@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/goodarte-medium.css">
     <link rel="stylesheet" href="styles/goodarte-large.css">
     <script type="module" src="scripts/modules.mjs"></script>
-    <script type="module" src="scripts/"></script>
+    <script type="module" src="scripts/order.mjs"></script>
 </head>
 
 <body>
@@ -39,39 +39,9 @@
     </nav>
 
     <main>
-        <section class="about">
-            <h1>About Us</h1>
-            <p>Welcome to Good Arte! We’re a small business dedicated to creating unique, handmade gifts
-                full of charm
-                and personality. From adorable stuffed animals and creative key chains, to grill kits, fun board games,
-                and beautiful plush bouquets, each item is crafted with care to bring joy to your special moments.
-
-                Whether you're celebrating, gifting, or just treating yourself, we’re here to help you find something
-                memorable. </p>
-        </section>
-        <h2>Contact US</h2>
-        <section class="information">
-            <p class="order">Place your personalized order</p>
-            <form method="GET" action="thankyou.html" class="designOne" id="order-form">
-                <label>What's your name<input type="text" name="name" required autocomplete="given-name"
-                        title="Your Name"></label>
-                <label>Email<input type="email" name="email" required placeholder="example@gmail.com" title="Your Email"
-                        autocomplete="email"></label>
-                <label>Phone Number<input type="tel" name="phone" required placeholder="09XX-XXX-XXX" title="Your Phone"
-                        autocomplete="tel"></label>
-
-                <label>Describe your order</label>
-                <textarea title="order description" name="description"></textarea>
-                <input type="hidden" name="date" id="timestamp">
-                <input type="submit" value="Make your Order">
-            </form>
-            <p class="address">Where to find us</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7216.034169935159!2d-57.48457784655763!3d-25.270010704189534!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spy!4v1730438163637!5m2!1ses-419!2spy"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
+        <h1>Thank you for choosing Us!</h1>
+        <div id="results"></div>
+        <input type="hidden" id="timestamp">
     </main>
     <footer>
         <div>
