@@ -1,21 +1,4 @@
 @media only screen and (min-width: 1023px) {
-    :root {
-        --primary-color: #E07A5F;
-        /* Rosewood Dust / Muted Terracotta */
-        --secondary-color: #7C8B6F;
-        /* Sage Green / Olive Gray */
-        --accent-color: #D4AF37;
-        /* Metallic Gold */
-        --background-color: #FDF8F6;
-        /* Linen / Blush White */
-        --text-color: #2F2F2F;
-        /* Charcoal Gray */
-        --header-background: #7C8B6F;
-        /* Pure White */
-        --footer-background: #7C8B6F;
-        /* (Same as Secondary) Sage Green */
-    }
-
 
     .hero-overlay {
         top: 45%;
