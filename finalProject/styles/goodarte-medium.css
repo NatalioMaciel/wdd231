@@ -14,10 +14,6 @@
         background-color: #9BA78F;
     }
 
-    li.current-navigation a {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
     nav {
         background-color: var(--background-color);
         grid-template-rows: 1fr;
@@ -75,19 +71,4 @@
         font-size: 0.8rem;
     }
 
-    .banner {
-        max-width: 1023px;
-    }
-
-    .product {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .product div {
-        grid-template-areas: "name"
-            "image"
-            "description"
-            "button";
-    }
 }
