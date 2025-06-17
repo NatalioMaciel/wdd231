@@ -1,13 +1,8 @@
 @media only screen and (min-width: 1023px) {
 
     .hero-overlay {
-        top: 45%;
+        top: 35%;
         left: 30%;
-    }
-
-    .hero-overlay h1,
-    p {
-        color: #ccc;
     }
 
 }
