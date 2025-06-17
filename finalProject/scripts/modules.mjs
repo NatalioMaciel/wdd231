@@ -15,7 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     loadFormData();
     displayCopyright();
     displayLastModified();
-
     saveFormData();
-
 });
